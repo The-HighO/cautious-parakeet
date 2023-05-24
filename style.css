@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+.main{
+    height: 100vh;
+    background: linear-gradient(119.54deg, #FEE3BC 50%, #eb9e82 99.52%);
+}
+.app-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5rem 2rem 2fr 1fr;
+    gap: 1rem;
+    padding: 5rem 1rem;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.state{
+    font-size: 2rem;
+    font-weight: 500;
+    color: 313341;
+    margin-bottom: 1rem;
+}
+.country{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: -0.5rem;
+}
+.date{
+    display: flex;
+    align-items: center;
+}
+.dates{
+    font-size: 1rem;
+    color: #858585 ;
+    font-weight: 400;
+}
+.detail{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.dum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.temparature{
+    font-size: 6rem;
+}
+.weather{
+    font-size: 1.2rem;
+}
+.details{
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+}
+.humidityContainer, .windSpeedContainer{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.group1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 0.5rem;
+}
+.Txt{
+    font-weight: 500;
+}
+.humValue, .speedValue{
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+@media only screen and (min-width: 600px){
+    .main{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .app-container{
+        width: 70%;
+        height: 80%;
+    }
+}
+@media only screen and (min-width: 900px){
+    .app-container{
+        max-width: 28rem;
+    }
+}
