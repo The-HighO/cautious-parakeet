@@ -1,5 +1,5 @@
 // DECLARATIONS
-let city = "lagos"
+let city = "tokyo"
 let key = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=97c95adba9ed058e377f5c39a68d2151&units=metric`
 let theState = document.querySelector(".state")
 let theCountry = document.querySelector(".country")
