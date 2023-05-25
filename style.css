@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Satoshi', sans-serif;
 }
+:root{
+    --flex:flex;
+    --justify-center:center;
+    --items-center: center;
+    --grid:grid;
+    --rounded-sm: 0.5rem;
+}
 .main{
     height: 100vh;
     background: linear-gradient(119.54deg, #FEE3BC 50%, #eb9e82 99.52%);
@@ -103,6 +110,31 @@
     color: black;
     font-size: 1.2rem;
     font-weight: 500;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent{
+    display: var(--flex);
+    justify-content:var(--justify-center);
+    align-items: var(--items-center);
+    background-color: #f5f5f5;
+    width: 95%;
+    height: 12rem;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.error{
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px){
